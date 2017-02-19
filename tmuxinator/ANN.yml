@@ -10,7 +10,7 @@ root: ~/Documents/ANN
 # pre: sudo /etc/rc.d/mysqld start
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
- pre_window: source activate lazyProgrammer
+pre_window: source activate ANN
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -33,4 +33,7 @@ windows:
       panes:
         - vim
         - ipython
-  - git: git
+  - python: 
+  - git: watch git status
+
+  
